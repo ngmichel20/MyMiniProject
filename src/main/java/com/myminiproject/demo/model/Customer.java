@@ -133,4 +133,15 @@ public class Customer {
   public void setTransactionAccounts(Long transactionAccounts) {
     this.transactionAccounts = transactionAccounts;
   }
+
+  @Override
+  public String toString() {
+    return "Customer{" +
+        "id=" + id +
+        ", name='" + name + '\'' +
+        ", surname='" + surname + '\'' +
+        ", balance=" + balance +
+        ", transactionAccounts=" + transactionAccounts +
+        '}';
+  }
 }
